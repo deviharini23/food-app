@@ -1,0 +1,22 @@
+// src/App.jsx
+
+import './App.css'; // ✅ This stays in the JS/JSX file
+
+function App() {
+  return (
+    <div className="container">
+      <h1>Food Delivery App</h1>
+      <p><strong>Upload Voice Order</strong></p>
+      <input type="file" />
+      <button>Upload</button>
+
+      <div className="response">
+        <p><strong>You said:</strong> I want a pizza.</p>
+        <p><strong>Suggested Dish:</strong> You might like Margherita Pizza!</p>
+        <p><strong>Detected Location:</strong> Unknown</p>
+      </div>
+    </div>
+  );
+}
+
+export default App;
